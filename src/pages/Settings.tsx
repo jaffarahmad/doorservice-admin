@@ -88,8 +88,7 @@ const Settings: React.FC = () => {
     
     try {
       const response = await authService.changePassword(
-        passwordData.currentPassword,
-        passwordData.newPassword
+        passwordData.currentPassword
       );
       
       if (response.success) {

@@ -66,7 +66,7 @@ export const workerService = {
     };
   },
 
-  async deleteWorker(id: string): Promise<ApiResponse<void>> {
+  async deleteWorker(): Promise<ApiResponse<void>> {
     await new Promise(resolve => setTimeout(resolve, 600));
     
     return {
@@ -94,7 +94,7 @@ export const workerService = {
     };
   },
 
-  async searchWorkers(query: string): Promise<ApiResponse<Worker[]>> {
+  async searchWorkers(): Promise<ApiResponse<Worker[]>> {
     await new Promise(resolve => setTimeout(resolve, 500));
     
     // This would normally search via API
@@ -104,7 +104,7 @@ export const workerService = {
     };
   },
 
-  async updateWorkerStatus(id: string, status: Worker['status']): Promise<ApiResponse<void>> {
+  async updateWorkerStatus(): Promise<ApiResponse<void>> {
     await new Promise(resolve => setTimeout(resolve, 600));
     
     return {
