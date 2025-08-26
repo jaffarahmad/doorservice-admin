@@ -8,7 +8,7 @@ import { useAdmin } from '../context/AdminContext';
 import type { Worker } from '../context/AdminContext';
 
 const Workers: React.FC = () => {
-  const { workers, updateWorker, deleteWorker, searchWorkers, filterWorkers } = useAdmin();
+  const { workers, updateWorker, deleteWorker, searchWorkers } = useAdmin();
   const [filteredWorkers, setFilteredWorkers] = useState<Worker[]>(workers);
   const [currentSearch, setCurrentSearch] = useState('');
   const [currentFilters, setCurrentFilters] = useState<FilterOptions>({});

@@ -55,7 +55,7 @@ export const authService = {
     return token.startsWith('mock-jwt-token');
   },
 
-  async changePassword(currentPassword: string, newPassword: string): Promise<AuthResponse> {
+  async changePassword(currentPassword: string): Promise<AuthResponse> {
     // Simulate API delay
     await new Promise(resolve => setTimeout(resolve, 1000));
     

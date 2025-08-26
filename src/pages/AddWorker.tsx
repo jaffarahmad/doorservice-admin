@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Save, User, Mail, Phone, MapPin, Briefcase } from 'lucide-react';
+import { ArrowLeft, Save, User, Mail, MapPin } from 'lucide-react';
 import { useAdmin } from '../context/AdminContext';
 
 interface FormData {

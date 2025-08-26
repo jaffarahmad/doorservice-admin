@@ -31,7 +31,7 @@ export const workerService = {
     };
   },
 
-  async getWorkerById(id: string): Promise<ApiResponse<Worker>> {
+  async getWorkerById(): Promise<ApiResponse<Worker>> {
     await new Promise(resolve => setTimeout(resolve, 500));
     
     // Mock response - in real app, fetch from API
@@ -57,7 +57,7 @@ export const workerService = {
     };
   },
 
-  async updateWorker(id: string, updates: Partial<Worker>): Promise<ApiResponse<Worker>> {
+  async updateWorker(): Promise<ApiResponse<Worker>> {
     await new Promise(resolve => setTimeout(resolve, 800));
     
     return {

@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import type { ReactNode } from 'react';
 
 export interface Worker {
   id: string;
@@ -153,4 +154,3 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
 };
 
 // Explicit export for better module resolution
-export type { Worker };

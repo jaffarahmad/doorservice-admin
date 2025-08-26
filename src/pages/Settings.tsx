@@ -4,8 +4,6 @@ import {
   Lock,
   Bell,
   Shield,
-  Database,
-  Mail,
   Save,
   Eye,
   EyeOff
